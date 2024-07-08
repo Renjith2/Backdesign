@@ -9,7 +9,12 @@ app.use(cors())
 app.use(express.json())
 app.use('/api/user',userRoute)
 
+const corsOptions = {
+  origin: 'https://quiet-dusk-299fb7.netlify.app',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
+app.use(cors(corsOptions));
 
 app.listen(7700,()=>{
     console.log("Server is Running!!!!!!@@@")
