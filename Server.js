@@ -11,7 +11,7 @@ app.use('/api/user',userRoute)
 
 
 
-app.listen(7766,()=>{
+app.listen(7700,()=>{
     console.log("Server is Running!!!!!!@@@")
 })
 
